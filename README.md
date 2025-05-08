@@ -1,4 +1,4 @@
-echo "# JavaScript_Tutorial" >> README.md
+# JavaScript_Tutorial
 git init
 git add README.md
 git commit -m "first commit"
