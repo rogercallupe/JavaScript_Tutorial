@@ -16,7 +16,6 @@ const pi = 3.14;
 // console.log(result);
 
 let likes = 10;
-
 // likes = likes + 1;
 // likes ++;
 // likes --;
@@ -27,4 +26,12 @@ let likes = 10;
 // likes **= 2;
 // likes %= 3;
 
-console.log(likes);
+//console.log(likes);
+
+// NaN - Not a Number
+
+// console.log(5 / 'hello');
+// console.log(5 * 'hello');
+
+let result = 'the blog has ' + likes + ' likes';
+console.log(result);
