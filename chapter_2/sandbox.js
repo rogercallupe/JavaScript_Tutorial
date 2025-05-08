@@ -11,4 +11,11 @@ let ninjas = ['shaun', 'ryu', 'chun-li'];
 // console.log(ninjas.length);
 
 // arrays methods
+// let result = ninjas.join('-');
+// let result = ninjas.indexOf('chun-li');
+// let result = ninjas.concat(['ken', 'crystal']);
+let result = ninjas.push('ken');
+result = ninjas.pop();
 
+
+console.log(result);
