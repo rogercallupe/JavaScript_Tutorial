@@ -1,3 +1,7 @@
-let age = null;
+// booleans & comparisons
+console.log(true, false, "true", "false") // true and false are booleans, "true" and "false" are strings
 
-console.log(age, age + 3, `the age is ${age}`);
+// methods can return booleans
+
+
+// comparison operators
