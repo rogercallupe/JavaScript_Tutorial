@@ -1,11 +1,10 @@
-// logical operators - OR || and  AND &&
+// logical NOT (!)
 
-const password = 'p@ssword123456';
+let user = false;
 
-if(password.length >= 12 && password.includes('@')) {
-    console.log('That password is mighty strong!');
-} else if(password.length >= 8 || password.includes('@') && password.length >= 5) {
-    console.log('That password is long enough!');
-} else {
-    console.log('Password is not long enough');
+if (!user) {
+    console.log('you must be logged in to continue');
 }
+
+console.log (!true); // false
+console.log (!false); // true
