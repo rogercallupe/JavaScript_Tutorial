@@ -1,13 +1,14 @@
 // variables & block scope
 
-let age = 30;
+const age = 30;
 
 if (true) {
-    let age = 40; //but if use only variable age without let, it will be 30
-    let name = 'shaun';
+    const age = 40; //but if use only variable age without let, it will be 30
+    const name = 'shaun';
     console.log('inside 1st code block:', age, name);
 
     if(true) {
+        const age = 50;
         console.log('inside 2nd code block:', age);
     }
 }
