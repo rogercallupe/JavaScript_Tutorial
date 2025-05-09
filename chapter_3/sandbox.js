@@ -1,38 +1,16 @@
-// switch statements
-const grade = 'A';
+// variables & block scope
 
-switch (grade) {
-    case 'A':
-        console.log('You got an A!');
-        break; // break statement is used to exit the switch block
-    case 'B':
-        console.log('You got a B!');
-        break;
-    case 'C':
-        console.log('You got a C!');
-        break;
-    case 'D':
-        console.log('You got a D!');
-        break;
-    case 'E':
-        console.log('You got an E!');
-        break;
-    default:
-        console.log('not a valid grade');
+let age = 30;
+
+if (true) {
+    let age = 40; //but if use only variable age without let, it will be 30
+    let name = 'shaun';
+    console.log('inside 1st code block:', age, name);
+
+    if(true) {
+        console.log('inside 2nd code block:', age);
+    }
 }
 
-
-// using if statement but with switch no need it
-// if (grade === 'A') {
-
-// } else if (grade === 'B') {
-
-// } else if (grade === 'C') {
-
-// } else if (grade === 'D') {
-
-// } else if (grade === 'E') {
-
-// } else {
-
-// }
+console.log('outside code block:', age, name); //name is not defined
+// name is not defined because it is declared inside the block scope
