@@ -1,15 +1,15 @@
-let age = 25;
+// type conversion
+let score = '100';
 
-// loose comparison (different types can still be equal)
+//score = Number(score);
+//console.log(score + 1);
+//console.log(typeof score);
 
-// console.log(age == 25);// true
-// console.log(age == '25'); // true, string '25' is equal to number 25
-// console.log(age != 25); // false
-// console.log(age != '25'); // false
+// let result = Number('hello');
+//let result = String(50);
+//let result = Boolean(100);
+//let result = Boolean(0);
+let result = Boolean('0');
 
-// strict comparison (different types cannot be equal)
+console.log(result, typeof result);
 
-console.log(age === 25); // true (strictly equals)
-console.log(age === '25'); // false, string '25' is not equal to number 25 (not strictly equals) 
-console.log(age !== 25); // false
-console.log(age !== '25'); // true, string '25' is not equal to number 25 (not strictly equals)
