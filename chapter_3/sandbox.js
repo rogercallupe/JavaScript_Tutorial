@@ -1,16 +1,17 @@
-// do while loops
+// if statements
+// const age = 20;
 
-// let i = 0;
-// while(i < 5) {
-//     console.log('val of i is:', i);
-//     i++;
+// if(age > 20) {
+//     console.log('You are over 20 years old');
 // }
 
-let i = 3;
+// const ninjas = ['shaun', 'ryu', 'chun-li', 'yoshi'];
+// if(ninjas.length > 3) {
+//     console.log("That's a lot of ninjas");
+// }
 
-do {
-    console.log('val of i is:', i);
-    i++;
+const password = 'p@ss';
+
+if(password.length >= 8) {
+    console.log('That password is long enough!');
 }
-while(i < 5);
-// do while loops will always run at least once
