@@ -8,7 +8,6 @@ let html = ``
 // people.forEach(function(person){
 // //  create html template
 //     html += `<li style="color: purple">${person}</li>`;
-
 // });
 
 // arrow converter
