@@ -1,15 +1,35 @@
-// regular function
+// practices arrow function
 
-// const calcArea = function (radius) {
-//   return 3.14 * radius ** 2;
+
+// const greet = function() {
+//   return "Hello, World!";
 // }
 
-// Arrow function (parameters) in parenthesis
+// example 1
+// const greet = () => 'Hello, World!';
+// const result = greet();
+// console.log(result); // Hello, World!
 
-const calcArea = radius => 3.14 * radius**2;
+// example 2
+
+// const bill = function(products, tax) {
+//   let total = 0;
+//   for (let i = 0; i < products.length; i++) {
+//     total += products[i] + products[i] * tax;
+//   }
+//   return total;
+// }
+
+// same with arrow function
+const bill = (products, tax) => {
+  let total = 0;
+  for (let i = 0; i < products.length; i++) {
+    total += products[i] + products[i] * tax;
+  }
+  return total;
+}
+
+console.log(bill([10, 15, 30], 0.2)); // 66
 
 
-
-const area =  calcArea(5);
-console.log('area is :', area);
 
