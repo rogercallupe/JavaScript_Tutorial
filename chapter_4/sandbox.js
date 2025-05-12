@@ -1,16 +1,22 @@
-const name = 'shaun';
+// callbacks & forEach
 
-// functions
-const greet = () => 'hello';
+const myFunc = (callbackFunc) => {
+  // do something
+  let value = 50;
+  callbackFunc(value);
+};
 
-let resultOne = greet();
-console.log(resultOne);
 
-// methods
-// methods are functions that are properties of an object
+// myFunc(function (value) {
+//     // do something
+//   console.log(value);
+// });
 
-let resultTwo = name.toUpperCase();
-console.log(resultTwo);
+myFunc(value => {
+  // arrow function) {
+    // do something
+  console.log(value);
+});
 
 
 
