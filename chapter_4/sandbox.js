@@ -1,27 +1,23 @@
-// callbacks & forEach
+//  get a reference to the 'ul'
 
-let people = ['mario', 'luigi', 'ryu', 'shaun', 'chun-li'];
+const ul = document.querySelector('.people');
+const people = ['mario', 'luigi', 'ryu', 'shaun', 'chun-li'];
 
-// forEach
-//  people.forEach(function(person){
-//     console.log(person);
-//  }); 
+let html = ``
 
-//  with convert in arrow function
+// people.forEach(function(person){
+// //  create html template
+//     html += `<li style="color: purple">${person}</li>`;
 
-//  people.forEach(person => {
-//     console.log(person);
-//  }); 
+// });
+
+// arrow converter
+people.forEach(person => {
+//  create html template
+    html += `<li style="color: purple">${person}</li>`;
+
+});
 
 
-//  with convert in arrow function and add index
-//  people.forEach((person, index) => {
-//     console.log(index, person);
-//  });
-
-// 
-const logPerson = (person, index) => {
-    console.log(`${index} - hello ${person}`);
-};
-
-people.forEach(logPerson);
+console.log(html);
+ul.innerHTML = html;
