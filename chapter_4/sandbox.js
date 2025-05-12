@@ -1,19 +1,15 @@
-// returning values
+// regular function
 
-// const speak = function(name = 'luigi', time = 'night') {
-//   console.log(`good ${time} ${name}`);
-// };
+// const calcArea = function (radius) {
+//   return 3.14 * radius ** 2;
+// }
 
-const calcArea = function(radius) {
-  let area =  3.14 * radius**2;
-  return area;
-  //console.log(area);
-}
+// Arrow function (parameters) in parenthesis
 
-const area = calcArea(5);
-console.log(area);
+const calcArea = radius => 3.14 * radius**2;
 
-const calcVol = function(area) {
-};
 
-calcVol(area)
+
+const area =  calcArea(5);
+console.log('area is :', area);
+
