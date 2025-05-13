@@ -1,59 +1,24 @@
-//  objects literals
+//  Math Object
 
-// const blogs = [
-//     { title: 'why mac & cheese rules', likes: 30 },
-//     { title: '10 things to make with marmite', likes: 50 }
-// ];
-//console.log(blogs);
+// console.log(Math);
+// console.log(Math.PI);
+// console.log(Math.E);
+// console.log(Math.SQRT2);
 
+const area = 7.7;
+console.log(Math.round(area)); // 8
+console.log(Math.floor(area)); // 7
+console.log(Math.ceil(area)); // 8
+console.log(Math.trunc(area)); // 7
 
-let user = {
-    name: 'crystal',
-    age: 30,
-    email: 'crystal@thenetninja.co.uk',
-    location: 'berlin',
-    // blogs: ['why mac & cheese rules', '10 things to make with marmite'],
-    blogs: [
-        { title: 'why mac & cheese rules', likes: 30 },
-    { title: '10 things to make with marmite', likes: 50 }
-],
-    login() {
-    //login: function() { // this is the same as the above regular function
-        console.log('the user logged in');
-    },
-    logout() {
-    // logout: function() { // this is the same as the above regular function
-        console.log('the user logged out');
-    },
-    // logBlogs: () => { //    this is an arrow function not working in because use 'this'
-    logBlogs() { // this is a regular function
-    //logBlogs: function(){
+// random numbers
 
-    // console.log(blogs); // this will not work because blogs is not defined in this scope
-    //    this.blogs  // this will work because this refers to the user object windows
-    // console.log(this); // this will work because this refers to complete the user object 
-    // console.log(this.blogs); // this will work because this refers to the blogs property of the user object
-    
-    
-    console.log('this user has written the following blogs:');
-    this.blogs.forEach(blog => {
-    console.log(blog.title, blog.likes);
-        //console.log(blog);
-     })
-   
+const random = Math.random();
 
-    console.log(this);
-
-    }    
-};
-
-user.logBlogs(); // calling the method
-console.log(this);
+console.log(random); 
+console.log(Math.round(random * 100)); // random number between 0 and 100
 
 
 
-// user.login();
-// user.logout();
 
-// const name ='mario';
-// name.toUpperCase(); // string method
+
