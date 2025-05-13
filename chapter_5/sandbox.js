@@ -1,24 +1,24 @@
-//  Math Object
+//  primitive values
 
-// console.log(Math);
-// console.log(Math.PI);
-// console.log(Math.E);
-// console.log(Math.SQRT2);
+// let scoreOne = 50;
+// let scoreTwo = scoreOne;
 
-const area = 7.7;
-console.log(Math.round(area)); // 8
-console.log(Math.floor(area)); // 7
-console.log(Math.ceil(area)); // 8
-console.log(Math.trunc(area)); // 7
+// console.log(`scoreOne: ${scoreOne}, scoreTwo: ${scoreTwo}`); // 50, 50
 
-// random numbers
+// scoreOne = 100;
+// console.log(`scoreOne: ${scoreOne}, scoreTwo: ${scoreTwo}`); // 100, 50
 
-const random = Math.random();
+//  reference values
 
-console.log(random); 
-console.log(Math.round(random * 100)); // random number between 0 and 100
+const userOne = { name: 'ryu', age: 30 };
+const userTwo = userOne;
 
+console.log(userOne, userTwo); // { name: 'ryu', age: 30 } { name: 'ryu', age: 30 }
 
+userOne.age = 40;
+console.log(userOne, userTwo); // { name: 'ryu', age: 40 } { name: 'ryu', age: 40 } 
+// because userTwo is a reference to userOne, changing userOne also changes userTwo
 
-
+userOne.name = 'chun-li';
+console.log(userOne, userTwo); // { name: 'chun-li', age: 40 } { name: 'chun-li', age: 40 }
 
