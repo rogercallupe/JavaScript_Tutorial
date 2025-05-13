@@ -1,4 +1,5 @@
 //  objects literals
+
 let user = {
     name: 'crystal',
     age: 30,
@@ -10,11 +11,28 @@ let user = {
     },
     logout: function() {
         console.log('the user logged out');
-    }
+    },
+    logBlogs: function(){
+
+    // console.log(blogs); // this will not work because blogs is not defined in this scope
+    //    this.blogs  // this will work because this refers to the user object windows
+    // console.log(this); // this will work because this refers to complete the user object 
+    // console.log(this.blogs); // this will work because this refers to the blogs property of the user object
+    console.log('this user has written the following blogs:');
+    this.blogs.forEach(blog => {
+    console.log(blog);
+    })
+   
+}
 };
 
-user.login();
-user.logout();
+user.logBlogs(); // calling the method
+console.log(this);
 
-const name ='mario';
-name.toUpperCase(); // string method
+
+
+// user.login();
+// user.logout();
+
+// const name ='mario';
+// name.toUpperCase(); // string method
