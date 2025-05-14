@@ -19,7 +19,12 @@ paras.forEach(p => {
     if(p.textContent.includes('error')){
         p.classList.add('error');
     }
-    if(p.textContent.includes('success')){
+    if(p.textContent.includes('success')){ // success is not hide text then we can use:  innerText.includes('success')
         p.classList.add('success');
     }
 });
+
+const title = document.querySelector('.title');
+
+title.classList.toggle('test');
+title.classList.toggle('test');
