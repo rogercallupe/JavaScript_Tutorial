@@ -4,5 +4,11 @@
 //console.log(para);
 
 const paras = document.querySelectorAll('p');
+const errors = document.querySelectorAll('.error');
 
-console.log(paras[2]);
+// paras.forEach(para => {
+//     console.log(para);
+// });
+//console.log(paras[2]);
+
+console.log(errors);
