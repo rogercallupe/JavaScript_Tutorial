@@ -1,14 +1,17 @@
-//const para = document.querySelector('p');
-//const para = document.querySelector('body > h1:nth-child(1)');
+// get an element by ID
 
-//console.log(para);
+// const title = document.getElementById('page-title');
+// console.log(title);
 
-const paras = document.querySelectorAll('p');
-const errors = document.querySelectorAll('.error');
+// get elements by their class name
 
-// paras.forEach(para => {
-//     console.log(para);
-// });
-//console.log(paras[2]);
+// const errors = document.getElementsByClassName('error');
+// console.log(errors);
+// console.log(errors[0]);
 
-console.log(errors);
+
+// get elements by their tag name
+
+const paras = document.getElementsByTagName('p');
+console.log(paras);
+console.log(paras[1]);
